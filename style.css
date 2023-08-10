@@ -1,0 +1,825 @@
+header {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+/* Navbar below */
+nav {
+  background-color: var(--secondary-color);
+}
+
+nav a.navbar-brand {
+  font-size: 2rem;
+}
+
+.btn-whatsapp {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  background-color: #25d366;
+  border-radius: 9999px;
+  box-shadow: 0 0px 8px 2px rgba(0, 100, 0, 0.3);
+  padding: 0.6em 1em;
+  transition: all 300ms;
+}
+
+.dropdown-menu {
+  box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.2);
+  background-color: var(--secondary-color);
+  animation: fade-in 300ms ease-out forwards;
+}
+
+.dropdown-item{
+  color: white;
+  transition: all 300ms;
+}
+
+
+.dropdown-toggle.show::after {
+  transform: rotate(-180deg);
+}
+.dropdown-toggle::after {
+  transition: all 500ms;
+}
+
+/* Footer */
+footer {
+  background-color: black;
+}
+
+footer ul li a {
+  color: #6c757d;
+  text-decoration: none;
+  transition: all 300ms;
+}
+
+footer h3::after {
+  content: "";
+  height: 2px;
+  width: 20%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #6c757d;
+}
+
+/* Common Styles Starts */
+:root {
+  --primary-color: #fdc25b;
+  --secondary-color: #29292a;
+  --background-color: #f0f2f3;
+}
+
+body {
+  font-family: "AvertaStd-Regular", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI";
+  color: var(--secondary-color);
+  background-color: #fafafa;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Hiding arrows of input number in Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.heading1 {
+  font-family: "AvertaStd-Black", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI";
+  line-height: 4rem;
+  font-size: 4rem;
+}
+
+.heading2 {
+  font-family: "AvertaStd-Black", system-ui, -apple-system, BlinkMacSystemFont;
+  font-size: 2.75rem;
+  line-height: 4rem;
+  text-align: center;
+}
+
+.heading3 {
+  font-family: "AvertaStd-Semibold", system-ui, -apple-system,
+    BlinkMacSystemFont;
+  line-height: 2.125rem;
+  font-size: 1.5rem;
+}
+
+.button {
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0.6em 2.5em;
+  font-size: 0.9rem;
+  border-radius: 9999px;
+  transition: all 300ms;
+}
+
+.primary-button {
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+.paragraph {
+  color: #4f4f4f;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  background-color: transparent;
+  color: var(--secondary-color);
+}
+
+.swiper-button {
+  display: grid;
+  place-content: center;
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  background-color: white;
+}
+
+/* Section Banner Starts */
+.banner {
+  background-color: var(--primary-color);
+}
+
+.banner .banner-left h1 {
+  font-size: 4rem;
+}
+
+.banner .banner-left h1 span {
+  background-image: linear-gradient(to right, #fff 0, #fff 100%);
+  background-repeat: no-repeat;
+  background-position: left bottom 0.5rem;
+  background-size: 100% 28px;
+}
+
+.banner .banner-left p {
+  font-size: 1.25rem;
+  color: #3f3f3f;
+  line-height: 1.75rem;
+}
+
+.banner .banner-left .text-uppercase {
+  color: var(--secondary-color);
+  letter-spacing: 0.02em;
+}
+
+.banner .banner-left .text-uppercase span {
+  padding: 0.1em 0.6em;
+  border-radius: 9999px;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.banner form {
+  padding: 1.875rem 2.5em;
+  box-shadow: 0 6px 26px rgba(63, 63, 63, 0.08),
+    0 8px 36px rgba(63, 63, 63, 0.04);
+  border-radius: 30px;
+}
+
+.banner form textarea,
+.banner form input,
+.banner form .button {
+  border-radius: 7px;
+}
+
+/* Section 1 Starts */
+.sec-1 {
+  padding-block: 5em;
+}
+
+.sec-1 h2 {
+  margin-bottom: 1em;
+}
+
+.sec-1 img {
+  max-width: 28rem;
+  margin-bottom: 1em;
+}
+
+/* Section 2 Starts */
+
+.sec-2 .swiper1 {
+  max-width: calc(100% - 6rem);
+}
+
+.sec-2 .swiper1 .swiper-card,
+.sec-13 .swiper-card {
+  background: var(--background-color);
+  border-radius: 2rem;
+  padding: 2rem;
+  min-height: 39.5rem;
+}
+
+.sec-2 .swiper-button-prev1 {
+  left: 0;
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.swiper-button.swiper-button-disabled {
+  cursor: not-allowed;
+  background-color: rgb(0, 0, 0, 0.1);
+}
+
+/* Section 3 Starts */
+
+.sec-3 .box {
+  background-color: var(--background-color);
+  border-radius: 1rem;
+  padding: 1.5em 1.3em;
+}
+
+.sec-3 .box h3,
+.sec-4 .box h3,
+.sec-9 .box h3,
+.sec-14 .box h3 {
+  font-family: "AvertaStd-Black", system-ui, -apple-system, sans-serif;
+}
+/* Section 4 Starts */
+
+.sec-4 .row1 p {
+  text-align: justify;
+}
+
+.sec-4 .box,
+.sec-9 .box,
+.sec-14 .box {
+  background-color: #ffe3b0;
+  border-radius: 1rem;
+  padding: 4.5em 1.8em 1em;
+  position: relative;
+  min-height: 26rem;
+}
+
+.sec-4 .box h3,
+.sec-9 .box h3,
+.sec-14 .box h3 {
+  background-color: var(--primary-color);
+  border-radius: 0.7rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.5em 1em;
+  transform: translateX(-1.5rem) translateY(-30%);
+}
+
+/* Section 5 Starts */
+.sec-5 .box {
+  position: relative;
+  background-color: var(--background-color);
+  border-radius: 1rem;
+  padding: 2em 1.8em 1em;
+  min-height: 22rem;
+}
+
+.sec-5 .box h3 {
+  font-size: 1.3rem;
+}
+
+.sec-5 .box .img-container {
+  background-color: #ffe3b0;
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.7em;
+  transform: translateX(-40%) translateY(-40%);
+}
+
+/* Section 6 Starts */
+
+.sec-6 .accordion-button {
+  font-size: 1.2rem;
+  background-color: #fafafa;
+
+  color: var(--secondary-color);
+  padding-inline: 0;
+}
+
+.sec-6 .accordion-button i {
+  padding: 0.3em 0.35em;
+  border-radius: 0.4rem;
+  background-color: var(--primary-color);
+}
+
+.sec-6 .accordion-body {
+  padding-inline: calc(4em - 1.25rem) 0.5em;
+  background-color: #fafafa;
+}
+
+/* Section 7 Starts */
+.sec-7 .box-container {
+  padding-inline: 2.5rem;
+  margin-bottom: 4.5em;
+}
+.sec-7 .box {
+  position: relative;
+  background-color: #ffe3b0;
+  border-radius: 1rem;
+  padding: 1em 1.8em 1em;
+  min-height: 22rem;
+}
+
+.sec-7 .box-container:nth-child(4) .box {
+  background-color: #f9cd49;
+}
+
+.sec-7 .box-container:nth-child(5) .box {
+  background-color: #f9cd49;
+}
+
+.sec-7 .box-container:nth-child(7) .box {
+  background-color: #f9cd49;
+  min-height: fit-content;
+}
+
+.sec-7 .box .img-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.6em;
+  border-radius: 0.5rem;
+  background-color: var(--primary-color);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.sec-7 .box-container:nth-child(4) .img-container {
+  background-color: #ffe3b0;
+}
+
+.sec-7 .box-container:nth-child(5) .img-container {
+  background-color: #ffe3b0;
+}
+
+.sec-7 .box-container:nth-child(7) .img-container {
+  background-color: #ffe3b0;
+}
+
+.sec-7 .box h3 {
+  font-size: 1.5rem;
+}
+
+/* Section 8 Starts */
+
+.sec-15 h2,
+.sec-8 h2 {
+  color: var(--secondary-color);
+}
+
+.sec-15 p span,
+.sec-8 p span {
+  font-family: "AvertaStd-Semibold", system-ui, -apple-system;
+  font-weight: 500;
+}
+
+.sec-15 .last-paragraph,
+.sec-15 .paragraphs-container div,
+.sec-8 .paragraphs-container div {
+  position: relative;
+  padding-left: 3.2rem;
+}
+
+.sec-15 .last-paragraph::before,
+.sec-15 .paragraphs-container div::before,
+.sec-8 .paragraphs-container div::before {
+  content: url("./img/sec8-img2.svg");
+  position: absolute;
+  left: 0;
+}
+
+/* Section 9 Starts */
+
+.sec-9 .order {
+  padding-left: 1.5em;
+  position: relative;
+  margin-left: 4.3rem;
+  margin-top: 8.6rem;
+}
+
+.sec-9 .order::after {
+  content: "";
+  width: 8.6rem;
+  height: 8.6rem;
+  border-radius: 50%;
+  border: 1px dashed #cee4d0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -1;
+}
+
+.sec-9 .order::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4.3rem;
+  width: 1px;
+  height: 100%;
+  border-left: 1px dashed #cee4d0;
+}
+
+.sec-9 .order:nth-child(1) {
+  margin-top: 4rem;
+}
+
+.sec-9 .order:nth-child(3)::before {
+  display: none;
+}
+
+.sec-9 .box {
+  min-height: fit-content;
+}
+
+.sec-9 .box h3 {
+  font-size: 1.75rem;
+  padding: 0.6em 0.8em;
+}
+
+/* Section 10 Starts */
+.sec-10 .sec10-left p {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: #4f4f4f;
+}
+
+.sec-10 .sec10-left p:last-child {
+  text-align: center;
+  font-size: 10rem;
+  color: rgba(0, 0, 0, 0.1);
+  transform: translateY(-15%);
+}
+
+.sec-10 .swiper2 {
+  max-width: calc(100% - 7rem);
+  overflow-y: visible;
+}
+
+.sec-10 .swiper2 .card {
+  position: relative;
+  padding: 2.5rem;
+  background: #fff;
+  border-radius: 2rem;
+  min-height: 24rem;
+  box-shadow: 0 4px 28px -25px rgba(0, 0, 0, 0.08), 0 -10px 0 0 #f0f2f3,
+    0 -20px 0 0 #e9eaeb;
+}
+
+.sec-10 .swiper2 .card .stars {
+  color: hsl(48, 98%, 48%);
+  font-size: 1.1rem;
+}
+
+.sec-10 .swiper-button-next2 {
+  transform: translateY(-50%);
+}
+
+.sec-10 .swiper-button-prev2 {
+  left: 0;
+  transform: translateY(-50%) rotate(180deg);
+}
+
+/* Section 11 */
+.sec-11 .accordion-item {
+  background-color: var(--background-color);
+  border: none;
+  margin-bottom: 1em;
+  border-radius: 0.5rem;
+  padding-block: 0.3em;
+}
+
+.sec-11 .accordion-button {
+  background-color: transparent;
+  border: none;
+}
+
+/* Section 12 */
+.sec-12 .d-grid {
+  background-color: var(--primary-color);
+  border-radius: 2rem;
+}
+
+.sec-12 .img-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #ffe3b0;
+  padding: 0.5em;
+  border-radius: 0.5rem;
+  transform: translate(-50%, 30%);
+}
+
+/* Section 13 */
+.sec-13 .nav-tabs {
+  border: none;
+}
+
+.sec-13 .nav-tabs .nav-link {
+  font-family: "AvertaStd-Semibold", sans-serif;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: #29292a;
+  border-bottom: 1px solid #e1e8ec;
+  transition: all 200ms;
+}
+
+.sec-13 .nav-tabs .nav-link span {
+  display: grid;
+  place-content: center;
+  font-size: 1rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  transition: all 200ms;
+  box-shadow: 0 0 4px 0 rgba(101, 95, 95, 0.2);
+}
+
+.sec-13 .nav-tabs .nav-link.active {
+  background-color: transparent;
+  color: #f4bc2d;
+}
+
+.sec-13 .nav-tabs .nav-link.active span {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+}
+
+/* Section 14 */
+.sec-14 .swiper3 {
+  max-width: calc(100% - 4rem);
+}
+
+.sec-14 .swiper3 .swiper-slide {
+  padding: 1em 1.5em;
+}
+
+.sec-14 .swiper-button-prev3 {
+  left: 0;
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.sec-14 .box {
+  min-height: fit-content;
+  padding-bottom: 2em;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.sec-14 .box ul {
+  padding-left: 1.25rem;
+}
+
+/* Section 17 */
+.sec-17 {
+  background-color: var(--primary-color);
+}
+
+.sec-17 .container-xl {
+  position: relative;
+  padding-bottom: 1.5rem;
+}
+
+.sec-17 .container-xl::after {
+  content: "";
+  background-image: url("img/sec17-img1.svg");
+  width: 395px;
+  height: 350px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.sec-17 p {
+  color: #3f3f3f;
+  font-size: 1.25rem;
+}
+
+.sec-12 .primary-button,
+.sec-17 .primary-button {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: white;
+  padding: 1em 3em;
+  font-weight: 500;
+}
+
+/* Hovers+ Section */
+.btn:focus {
+  box-shadow: none;
+}
+
+.btn-whatsapp:hover {
+  scale: 1.05;
+}
+
+footer ul li a:hover {
+  color: #f8f9fa;
+}
+
+.banner .form-control:hover {
+  border-color: var(--primary-color);
+}
+
+.primary-button:hover {
+  background-color: hsl(38, 98%, 60%);
+}
+
+.sec-12 .primary-button:hover,
+.sec-17 .primary-button:hover {
+  background-color: hsl(240, 1%, 25%);
+}
+
+.sec-13 .nav-tabs .nav-link:hover {
+  text-decoration-color: hsl(0, 0%, 51%);
+  color: hsl(0, 0%, 51%);
+}
+
+.banner .form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.25rem rgba(253, 194, 91, 0.25);
+}
+
+/* Animations */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    z-index: -1;
+    transform: translateY(-100%);
+  }
+  40% {
+    z-index: -1;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(0%);
+  }
+}
+
+@media (max-width: 992px) {
+  .sec-4 .box,
+  .sec-5 .box,
+  .sec-7 .box,
+  .sec-9 .box,
+  .sec-14 .box {
+    min-height: auto;
+  }
+
+  .sec-7 .box-container {
+    padding-left: 2.2rem;
+    padding-right: 1.2rem;
+  }
+
+  .sec-8 .img-container {
+    max-height: 22rem;
+  }
+
+  .sec-10 .swiper2 .card {
+    min-height: auto;
+  }
+
+  .sec-17 .container-xl {
+    padding-bottom: 9em;
+    overflow: hidden;
+  }
+
+  .sec-17 .container-xl::after {
+    bottom: -80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .heading2 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  .banner .banner-left {
+    max-width: 38rem;
+  }
+
+  .banner .banner-left h1 span {
+    background-size: 100% 0.9rem;
+    background-position: left 0 bottom 4px;
+  }
+  .banner .banner-left h1 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+  .banner .banner-left p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .sec-17 .container-xl {
+    padding-bottom: 13em;
+  }
+  
+}
+
+@media (max-width: 576px) {
+  .btn-whatsapp {
+    font-size: 14px;
+    padding: 0.5em 0.8em;
+  }
+
+  nav a.navbar-brand {
+    font-size: 1.5rem;
+  }
+
+  .swiper-button {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 0.9rem;
+  }
+
+  .sec-1 img {
+    max-width: 100%;
+  }
+
+  .sec-2 .wrapper {
+    padding-inline: 0;
+  }
+
+  .sec-2 .swiper1 .swiper-card {
+    padding: 1.5rem;
+  }
+
+  .sec-4 .box h3,
+  .sec-9 .box h3,
+  .sec-14 .box h3 {
+    transform: translateX(-1rem) translateY(-30%);
+  }
+
+  .sec-5 .box {
+    padding: 2em 1.2em 1em;
+  }
+
+  .sec-15 .last-paragraph,
+  .sec-15 .paragraphs-container div,
+  .sec-8 .paragraphs-container div {
+    padding-left: 2.8rem;
+  }
+
+  .sec-9 .order::after {
+    width: 6.6rem;
+    height: 6.6rem;
+  }
+
+  .sec-9 .order::before {
+    height: calc(100% + 2rem);
+    top: 3.3rem;
+  }
+
+  .sec-9 .box h3 {
+    font-size: 1.5rem;
+    padding: 0.4em 0.6em;
+  }
+
+  .sec-9 .order {
+    margin-left: 3rem;
+  }
+
+  .sec-10 .swiper2 {
+    max-width: calc(100% - 5.5rem);
+  }
+
+  .sec-10 .swiper2 .card {
+    padding: 1.5rem;
+  }
+
+  .sec-12 .primary-button,
+  .sec-17 .primary-button {
+    padding: 1em 2em;
+    font-size: 0.8rem;
+  }
+
+  .sec-14 .swiper3 {
+    max-width: calc(100% - 2rem);
+  }
+
+  .sec-17 .container-xl {
+    padding-bottom: 11em;
+  }
+
+  .sec-17 .container-xl::after {
+    bottom: -68px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 318px;
+    width: 282px;
+  }
+}
